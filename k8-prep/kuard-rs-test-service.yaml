@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: kuard-rs-test
+  name: kuard-rs-test
+spec:
+  externalIPs:
+  - 35.239.131.39
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kuard-rs-test-pod
+  sessionAffinity: None
+  type: ClusterIP
