@@ -8,4 +8,10 @@ spec:
   containers:
   - name:  nginx-controller
     image:  nginx
+  tolerations:
+    - key: "app"
+      operator: "Equal"
+      value: blue
+      effect: NoSchedule
+
 
