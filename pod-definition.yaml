@@ -6,6 +6,6 @@ metadata:
     app: my-app
 spec:
   containers:
-  - name: nginx-controller
-    image: nginx
+  - name:  nginx-controller
+    image:  nginx
 
