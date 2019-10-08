@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: helloworld 
+spec:
+  completions: 2
+  parallesim: 2
+  template:
+    metadata:
+      name:  name
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        command: ["echo","Hello Worlds!"]
+      restartPolicy: Never
