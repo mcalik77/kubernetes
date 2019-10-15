@@ -4,7 +4,7 @@ metadata:
   name: pvc-hostpath
 spec:
   storageClassName: manual 
-  accessMode:
+  accessModes:
     - ReadWriteOnce
   resources:
     requests:
