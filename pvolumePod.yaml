@@ -10,7 +10,7 @@ spec:
   containers:
   - name: busybox
     image: busybox
-    command:["/bin/sh"]
+    command: ["/bin/sh"]
     args: ["-c","sleep 600"]
     volumeMounts:
       - name:  host-volume
