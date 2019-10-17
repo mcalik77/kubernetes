@@ -15,6 +15,7 @@ spec:
             name:  demo-configmap
             key:  channel.name
       - name: CHANNELOWNER
+        valueFrom:
           configMapKeyRef:
             name:  demo-configmap
             key:  channel.owner
