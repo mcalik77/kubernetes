@@ -10,10 +10,10 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 0
-      maxUnavailable: 1
+      maxSurge: 2
+      maxUnavailable: 2
   minReadySeconds: 5
-  revisionHistoryLimit: 10
+  revisionHistoryLimit: 2
   template:
     metadata:
       labels:
