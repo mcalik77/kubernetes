@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name:  nginx-controller
-    image:  nginx
+    image:  nginx:1.7.1
